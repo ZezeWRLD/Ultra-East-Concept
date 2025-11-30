@@ -1,0 +1,325 @@
+/* ULTRA EAST Custom Styles */
+:root {
+    --ultra-red: #E30613;
+    --ultra-black: #000000;
+    --ultra-white: #FFFFFF;
+    --maroon-shadow: #2A0000;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: var(--ultra-white);
+    color: var(--ultra-black);
+}
+
+/* Ensure content is visible by default */
+section {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
+}
+
+.display-1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--ultra-black) !important;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    color: var(--ultra-white) !important;
+    font-size: 1.8rem !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--ultra-white) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--ultra-red) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--ultra-black) 0%, var(--maroon-shadow) 100%);
+    color: var(--ultra-white);
+    padding-top: 100px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--ultra-red);
+    border-color: var(--ultra-red);
+    color: var(--ultra-white);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c40510;
+    border-color: #c40510;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(227, 6, 19, 0.3);
+}
+
+.btn-outline-light {
+    border-radius: 0;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    border-color: var(--ultra-white);
+    color: var(--ultra-white);
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+    background-color: var(--ultra-white);
+    color: var(--ultra-black);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.engine-card, .service-card, .ip-card, .event-card, .activation-card {
+    background: var(--ultra-white);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.engine-card:hover, .service-card:hover, .ip-card:hover, .event-card:hover, .activation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--ultra-red);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+    background-color: var(--ultra-black) !important;
+    color: var(--ultra-white);
+}
+
+.bg-dark .text-muted {
+    color: #adb5bd !important;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--ultra-red);
+    box-shadow: 0 0 0 0.2rem rgba(227, 6, 19, 0.1);
+}
+
+.contact-form .form-select {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--ultra-black) !important;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--ultra-red) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 3rem;
+    }
+    
+    .hero-section {
+        text-align: center;
+        padding: 120px 0 60px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Enhanced Animation Classes (Safe) */
+.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.enhanced {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fade-in-up.enhanced.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Spacing */
+.mb-section {
+    margin-bottom: 80px;
+}
+
+.pt-section {
+    padding-top: 80px;
+}
+
+.pb-section {
+    padding-bottom: 80px;
+}
+
+/* Icon Styles */
+.bi {
+    vertical-align: -0.125em;
+}
+
+/* Badge Styles */
+.badge {
+    border-radius: 0;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Social Links */
+.social-links .btn {
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Opportunity List */
+.opportunity-list .border-bottom {
+    border-color: #dee2e6 !important;
+}
+
+/* Image Styles */
+.img-fluid {
+    border-radius: 0;
+}
+
+.rounded {
+    border-radius: 8px !important;
+}
+
+.shadow {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Loading States */
+.btn-loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ensure all content is visible */
+* {
+    box-sizing: border-box;
+}
+
+/* Safe background colors for all sections */
+.hero-section,
+.bg-dark,
+.bg-black,
+footer {
+    background-color: var(--ultra-black) !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Text color fixes */
+.text-white {
+    color: var(--ultra-white) !important;
+}
+
+.text-black {
+    color: var(--ultra-black) !important;
+}
+
+/* Safe hover effects */
+.card {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
